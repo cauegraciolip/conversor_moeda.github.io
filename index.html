@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> 
+    <title>Conversor de Moeda</title>
+</head>
+<body>
+
+    <main id="container">
+        <h1 id="title">Conversor de moedas</h1>
+        <p id="texto">Converta qualquer valor em Real para Dólar, Euro ou BitCoin</p>
+        <form action="submit" id="form">
+            <input type="number" id="text" name="text" class="shadow">
+            <div id="flex">
+                <input type="button" value="Converter" name="btn" id="btn" class="shadow">
+                <select name="moeda" id="moeda" class="shadow">
+                    <option value="USD">Dólar</option>
+                    <option value="EUR">Euro</option>
+                    <option value="BTC">BitCoin</option>
+                </select>
+            </div>
+        </form>
+        <h2 id="content">Aqui está seu resultado!</h2>
+    </main>
+    
+<script src="app.js"></script>
+</body>
+</html>
