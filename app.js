@@ -25,7 +25,7 @@ const showData = (element) => {
     }
 
     let resultado = (index) => {
-        document.getElementById('content').innerHTML = `R$${input} = ${valor[index].nome} ${converter(input, valor[index].cotacao).toFixed(2)}`
+        document.getElementById('content').innerHTML = `${valor[index].nome}${input} = R$${converter(input, valor[index].cotacao).toFixed(2)}`
     }
 
     if ( selectValue == "USD" ) {
